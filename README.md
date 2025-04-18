@@ -2,6 +2,8 @@
 
 Лёгкий клиент‑серверный мессенджер на C++ с поддержкой многопоточности и обменом приватными сообщениями в локальной сети через веб-сокеты.
 
+![CI](https://github.com/CosmoCodeCraft/cpp-messenger/actions/workflows/build.yml/badge.svg)
+
 ## Структура
 - `server/` – исходники и CMake для сервера  
 - `client/` – исходники и CMake для клиента  
