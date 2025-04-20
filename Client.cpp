@@ -28,7 +28,7 @@ int main() {
         hints.ai_socktype = SOCK_STREAM;
         hints.ai_protocol = IPPROTO_TCP;
 
-        if (getaddrinfo("127.0.0.1", "5723", &hints, &res) != 0)
+        if (getaddrinfo("localhost", "5723", &hints, &res) != 0)  //The IP and port must be specified
             throw std::runtime_error("getaddrinfo failed");
 
         SOCKET sock = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
